@@ -5,3 +5,19 @@
 body {
   @apply text-brand-textPrimary bg-brand-bg font-sans;
 }
+
+/* Gradient utility classes */
+.bg-gradient-section {
+  @apply bg-gradient-custom;
+}
+
+.text-gradient {
+  @apply bg-gradient-custom bg-clip-text text-transparent;
+}
+
+.border-gradient {
+  @apply border-2 border-gradient-start;
+  background-image: linear-gradient(white, white), linear-gradient(90deg, #FF7B92, #D490F8);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
