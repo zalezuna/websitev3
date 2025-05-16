@@ -46,7 +46,8 @@ function App() {
     {
       name: 'Michele Csonka',
       title: 'Co-founder',
-      bio: 'Michele Csonka brings extensive hands-on clinical and leadership experience to regenmedAI. As a Medical Aesthetics Provider, she has a direct understanding of current practice needs. Her background includes serving as the Director of Nursing for an Ambulatory Surgery Center, where she successfully led the facility from its initial development to achieving Joint Commission accreditation. Michele also dedicated four years as an ER nurse, honing her skills in high-pressure medical environments. Her passion lies in rejuvenation medicine and enhancing patient care through innovation.'
+      bio: 'Michele Csonka brings extensive hands-on clinical and leadership experience to regenmedAI. As a Medical Aesthetics Provider, she has a direct understanding of current practice needs. Her background includes serving as the Director of Nursing for an Ambulatory Surgery Center, where she successfully led the facility from its initial development to achieving Joint Commission accreditation. Michele also dedicated four years as an ER nurse, honing her skills in high-pressure medical environments. Her passion lies in rejuvenation medicine and enhancing patient care through innovation.',
+      linkedIn: 'www.linkedin.com/in/michele-csonka-43bb98365'
     },
     {
       name: 'Zale Zuna',
