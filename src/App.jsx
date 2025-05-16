@@ -51,7 +51,8 @@ function App() {
     {
       name: 'Zale Zuna',
       title: 'Co-founder',
-      bio: 'Zale Zuna, Co-founder, combines expertise in healthcare administration with a focused proficiency in AI development. With three years of experience providing end-to-end medical coding and billing services for a CRNA group, Zale has a practical understanding of administrative workflows and pain points. Recognizing the transformative potential of AI, Zale has dedicated significant time to intensive AI development training, including specialized learning with AI software engineering mentorship. Zale has also completed Google\'s \'Generative AI in Healthcare\' and \'Google Cloud Healthcare API\' courses through the Google Cloud Developer Program.'
+      bio: 'Zale Zuna combines expertise in healthcare administration with a focused proficiency in AI development. With three years of experience providing end-to-end medical coding and billing services for a CRNA group, Zale has a practical understanding of administrative workflows and pain points. Recognizing the transformative potential of AI, Zale has dedicated significant time to intensive AI development training, including specialized learning with AI software engineering mentorship. Zale has also completed Google\'s \'Generative AI in Healthcare\' and \'Google Cloud Healthcare API\' courses through the Google Cloud Developer Program.',
+      linkedIn: 'www.linkedin.com/in/zale-zuna-9044471aa'
     }
   ];
 
@@ -117,17 +118,17 @@ function App() {
         {/* --- Hero Section --- */}
         <section id="hero" className="py-20 md:py-32 bg-gradient-custom">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white mb-4">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-black mb-4">
               Intelligent Automation for Modern Healthcare
             </h1>
-            <p className="mt-4 text-lg md:text-xl text-white/80 max-w-3xl mx-auto mb-8">
-              {companyName} provides premium AI consulting and implementation, empowering clinics, medspas, and surgical centers to optimize operations and enhance patient care.
+            <p className="mt-4 text-lg md:text-xl text-black max-w-3xl mx-auto mb-8">
+              {companyName} provides premium AI solutions, empowering healthcare providers to optimize operations and enhance patient care.
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-              <a href="#contact" className="inline-flex items-center justify-center px-8 py-3 border border-white text-base font-medium rounded-md shadow-sm text-gradient-start bg-white hover:bg-white/90 transition-opacity whitespace-nowrap">
+              <a href="#contact" className="inline-flex items-center justify-center px-8 py-3 border border-black text-base font-medium rounded-md shadow-sm text-black bg-white hover:bg-white/90 transition-opacity whitespace-nowrap">
                 Request a Consultation
               </a>
-              <a href="#services" className="inline-flex items-center justify-center px-8 py-3 border border-white/70 text-base font-medium rounded-md text-white bg-transparent hover:bg-white/10 transition-colors whitespace-nowrap">
+              <a href="#services" className="inline-flex items-center justify-center px-8 py-3 border border-black text-base font-medium rounded-md text-black bg-transparent hover:bg-white/10 transition-colors whitespace-nowrap">
                 Explore Services
               </a>
             </div>
@@ -251,6 +252,13 @@ function App() {
                     </span>
                     <h3 className="text-xl font-semibold text-brand-primary">{member.name}</h3>
                     <p className="text-sm font-medium text-brand-accent mb-2">{member.title}</p>
+                    {member.linkedIn && (
+                      <p className="text-sm mb-2">
+                        <a href={`https://${member.linkedIn}`} className="text-brand-primary hover:underline" target="_blank" rel="noopener noreferrer">
+                          LinkedIn Profile
+                        </a>
+                      </p>
+                    )}
                   </div>
                   <p className="text-sm text-brand-textSecondary">{member.bio}</p>
                 </div>
@@ -284,18 +292,18 @@ function App() {
       </main>
 
       {/* === Footer (Uncommented) === */}
-      <footer className="bg-brand-primary text-brand-bgSubtle">
+      <footer className="bg-white text-black">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center space-x-4">
-               <span className="text-lg font-semibold text-white">
+               <span className="text-lg font-semibold text-black">
                  {companyName}
                </span>
-               <p className="text-sm text-white">&copy; {new Date().getFullYear()} {companyName}. All rights reserved.</p>
+               <p className="text-sm text-black">&copy; {new Date().getFullYear()} {companyName}. All rights reserved.</p>
             </div>
-            <div className="text-sm text-white text-center md:text-right">
+            <div className="text-sm text-black text-center md:text-right">
               <p>{location}</p>
-              <p><a href={`mailto:${contactEmail}`} className="hover:text-white transition-colors">{contactEmail}</a></p>
+              <p><a href={`mailto:${contactEmail}`} className="hover:text-black transition-colors">{contactEmail}</a></p>
             </div>
           </div>
         </div>

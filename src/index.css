@@ -12,12 +12,12 @@ body {
 }
 
 .text-gradient {
-  @apply bg-gradient-custom bg-clip-text text-transparent;
+  @apply text-black;
 }
 
 .border-gradient {
-  @apply border-2 border-gradient-start;
-  background-image: linear-gradient(white, white), linear-gradient(90deg, #FF7B92, #D490F8);
+  @apply border-2 border-black;
+  background-image: linear-gradient(white, white), linear-gradient(90deg, #000000, #000000);
   background-origin: border-box;
   background-clip: padding-box, border-box;
 }

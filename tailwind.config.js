@@ -8,25 +8,25 @@ export default {
     extend: {
       colors: {
         brand: {
-          primary: '#FF7B92', // Pink from gradient
-          accent: '#D490F8',  // Purple from gradient
-          textPrimary: '#111827', // Dark Gray - Main text color
-          textSecondary: '#4B5563', // Medium Gray - Subtext, descriptions
+          primary: '#000000', // Changed to black
+          accent: '#000000',  // Changed to black
+          textPrimary: '#000000', // Changed to black
+          textSecondary: '#000000', // Changed to black
           bg: '#FFFFFF',         // White - Main background
           bgSubtle: '#FFF1F3',    // Very Light Pink for subtle backgrounds
           border: '#FFD9E0'       // Light Pink for borders
         },
         gradient: {
-          start: '#FF7B92', // Pink start of gradient
-          end: '#D490F8'    // Purple end of gradient
+          start: '#000000', // Changed to black
+          end: '#000000'    // Changed to black
         }
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'], // Modern, accessible sans-serif
       },
       backgroundImage: {
-        'gradient-main': 'url("/src/gradient.png")',
-        'gradient-custom': 'linear-gradient(90deg, #FF7B92 0%, #D490F8 100%)',
+        'gradient-main': 'url("/src/new-gradient.png")',
+        'gradient-custom': 'url("/src/new-gradient.png")',
       },
     },
   },
