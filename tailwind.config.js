@@ -8,17 +8,25 @@ export default {
     extend: {
       colors: {
         brand: {
-          primary: '#0A2540', // Deep Navy - Use for main actions, highlights
-          accent: '#8C3B4A',    // Muted Maroon - Use sparingly for secondary actions, hover
-          textPrimary: '#111827', // Dark Gray - Main text color
-          textSecondary: '#4B5563', // Medium Gray - Subtext, descriptions
+          primary: '#000000', // Changed to black
+          accent: '#000000',  // Changed to black
+          textPrimary: '#000000', // Changed to black
+          textSecondary: '#000000', // Changed to black
           bg: '#FFFFFF',         // White - Main background
-          bgSubtle: '#F9FAFB',    // Very Light Gray - Section backgrounds
-          border: '#E5E7EB'       // Light Gray - Borders, dividers
+          bgSubtle: '#FFF1F3',    // Very Light Pink for subtle backgrounds
+          border: '#FFD9E0'       // Light Pink for borders
+        },
+        gradient: {
+          start: '#000000', // Changed to black
+          end: '#000000'    // Changed to black
         }
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'], // Modern, accessible sans-serif
+      },
+      backgroundImage: {
+        'gradient-main': 'url("/src/new-gradient.png")',
+        'gradient-custom': 'url("/src/new-gradient.png")',
       },
     },
   },
